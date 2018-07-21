@@ -1,0 +1,293 @@
+L166 LINKER/LOCATER V5.25                                                               09/12/2011  15:32:45  PAGE 1
+
+
+L166 LINKER/LOCATER V5.25, INVOKED BY:
+D:\PROGRAM FILES\KEIL\C166\BIN\L166.EXE Start_V3.obj, MAIN.obj, SCS.obj, IO.obj, Bootroom.obj, pflash.obj, irq_redir.obj
+>>  TO XC2365B_Boot IXREF NOVECTAB CLASSES (ICODE (0XC00000-0XC03FFF), NCODE (0XC00000-0XC03FFF), FCODE (0XC00000-0XC03F
+>> FF), SROM (0XC00000-0XC03FFF), FCONST (0XC00000-0XC03FFF), HCONST (0XC00000-0XC03FFF), XCONST (0XC00000-0XC03FFF), NC
+>> ONST (0XC02000-0XC03FFF), NDATA (0XC000-0XCFFF, 0XF600-0XFDFF), NDATA0 (0XC000-0XCFFF, 0XF600-0XFDFF), SDATA (0XC000-
+>> 0XCFFF, 0XF600-0XFDFF), SDATA0 (0XC000-0XCFFF, 0XF600-0XFDFF), IDATA (0XF600-0XFDFF), IDATA0 (0XF600-0XFDFF), FDATA (
+>> 0XC000-0XCFFF, 0XF600-0XFDFF), FDATA0 (0XC000-0XCFFF, 0XF600-0XFDFF), HDATA (0XC000-0XCFFF, 0XF600-0XFDFF), HDATA0 (0
+>> XC000-0XCFFF, 0XF600-0XFDFF), XDATA (0XC000-0XCFFF, 0XF600-0XFDFF), XDATA0 (0XC000-0XCFFF, 0XF600-0XFDFF)) CINITTAB (
+>> 0XC04000-0XC4FFFF) SECTIONS (?PR?BOOTROOM%BCODE (0XE00200)[], ?PR?PFLASH%BCODE (0XE00400)[])
+
+
+CPU TYPE:     C167 or derivative
+CPU MODE:     SEGMENTED
+MEMORY MODEL: MEDIUM
+
+
+INPUT MODULES INCLUDED:
+  Start_V3.obj (?C_STARTUP)
+         COMMENT TYPE 128: A166 V5.33
+  MAIN.obj (MAIN)
+         COMMENT TYPE 128: C166 V7.00
+  SCS.obj (SCS)
+         COMMENT TYPE 128: C166 V7.00
+  IO.obj (IO)
+         COMMENT TYPE 128: C166 V7.00
+  Bootroom.obj (BOOTROOM)
+         COMMENT TYPE 128: C166 V7.00
+  pflash.obj (PFLASH)
+         COMMENT TYPE 128: C166 V7.00
+  irq_redir.obj (IRQ_REDIR)
+         COMMENT TYPE 128: A166 V5.33
+  D:\PROGRAM FILES\KEIL\C166\LIB\C167M.LIB (HMEMCPY)
+         COMMENT TYPE 128: A166 V5.33
+  D:\PROGRAM FILES\KEIL\C166\LIB\C167M.LIB (?C_ENDINIT)
+         COMMENT TYPE 128: A166 V5.33
+
+
+INTERRUPT PROCEDURES OF MODULE:  XC2365B_Boot (?C_STARTUP)
+
+
+INTERRUPT PROCEDURE                 INT  INTERRUPT NAME
+=======================================================
+?C_RESET                              0  RESET
+
+
+MEMORY MAP OF MODULE:  XC2365B_Boot (?C_STARTUP)
+
+
+START     STOP      LENGTH    TYPE  RTYP  ALIGN  TGR  GRP  COMB  CLASS   SECTION NAME
+=====================================================================================
+000000H   000189H   00018AH   CODE  REL   WORD   ---  ---  PUBL  BCODE   ?PR?MAIN
+00C000H   00C1FFH   000200H   DATA  REL   WORD   ---    1  PUBL  NDATA   ?C_USERSTACK
+00C200H   00C21FH   000020H   DATA  REL   WORD   ---    1  PUBL  NDATA   ?C_USERSTACK1
+00C220H   00C23FH   000020H   DATA  REL   WORD   ---    1  PUBL  NDATA   ?C_USERSTACK2
+00C240H   00C249H   00000AH   DATA  REL   WORD   ---    1  PUBL  NDATA0  ?ND0?SCS
+00C24AH   00C24FH   000006H   DATA  REL   WORD   ---    1  PUBL  NDATA0  ?ND0?BOOTROOM
+00C250H   00C253H   000004H   DATA  REL   WORD   ---    1  PUBL  NDATA0  ?ND0?PFLASH
+00C254H   00C2D3H   000080H   DATA  REL   WORD   ---    2  PUBL  SDATA0  ?SD0?BOOTROOM
+L166 LINKER/LOCATER V5.25                                                             09/12/2011  15:32:45  PAGE 2
+
+
+00F600H   00F7FFH   000200H   DATA  REL   WORD   ---    2  PUBL  IDATA   ?C_SYSSTACK
+00FC00H   00FC1FH   000020H   DATA  ---   BYTE   ---  ---  ---   *REG*   ?C_MAINREGISTERS
+C00000H   C001FFH   000200H   CODE  ABS   AT..   ---  ---  PRIV  ---     VECT_TAB
+C00200H   C003F7H   0001F8H   CODE  REL   WORD   ---  ---  PRIV  ICODE   ?C_STARTUP_CODE
+C003F8H   C0095BH   000564H   CODE  REL   WORD   ---  ---  PUBL  FCODE   ?PR?SCS
+C0095CH   C00985H   00002AH   CODE  REL   WORD   ---  ---  PUBL  FCODE   ?PR?IO
+C00986H   C0099BH   000016H   CODE  REL   WORD   ---  ---  PRIV  FCODE   ?PR?HMEMCPY
+*** '?PR?BOOTROOM'  execution at: E00200H   
+C0099CH   C009D1H   000036H   CODE  REL   WORD   ---  ---  PUBL  SROM    ?PR?BOOTROOM
+*** '?PR?PFLASH'  execution at: E00400H   
+C009D2H   C00B1DH   00014CH   CODE  REL   WORD   ---  ---  PUBL  SROM    ?PR?PFLASH
+C02000H   C0200FH   000010H   DATA  REL   WORD   ---    3  PUBL  NCONST  ?NC?SCS
+C04000H   C0409BH   00009CH   XDATA REL   WORD   ---  ---  GLOB  ---     ?C_INITSEC
+C0409CH   C040ADH   000012H   CONST ABS   WORD   ---  ---  PRIV  ---     ?C_CLRMEMSEC
+*** '?PR?BOOTROOM' stored at: C0099CH   execution at:
+E00200H   E00235H   000036H   CODE  REL   WORD   ---  ---  PUBL  BCODE   ?PR?BOOTROOM
+*** '?PR?PFLASH' stored at: C009D2H   execution at:
+E00400H   E0054BH   00014CH   CODE  REL   WORD   ---  ---  PUBL  BCODE   ?PR?PFLASH
+
+
+
+GROUP LIST OF MODULE:  XC2365B_Boot (?C_STARTUP)
+
+
+GROUP NAME                           TYPE  TGR  GRP  CLASS       SECTION NAME
+=============================================================================
+NDATA                                DATA  ---    1  NDATA       ?C_USERSTACK
+                                                     NDATA       ?C_USERSTACK1
+                                                     NDATA       ?C_USERSTACK2
+                                                     NDATA0      ?ND0?SCS
+                                                     NDATA0      ?ND0?BOOTROOM
+                                                     NDATA0      ?ND0?PFLASH
+
+SDATA                                DATA  ---    2  IDATA       ?C_SYSSTACK
+                                                     SDATA0      ?SD0?BOOTROOM
+
+NCONST                               DATA  ---    3  NCONST      ?NC?SCS
+
+
+
+
+PUBLIC SYMBOLS OF MODULE:  XC2365B_Boot (?C_STARTUP)
+
+
+      VALUE       PUBLIC SYMBOL NAME               REP   TGR  CLASS   SECTION
+      =======================================================================
+      C0409CH     ?C_CLRMEMSECSTART                VAR   ---  ---     ---
+      C0409AH     ?C_ENDINIT                       VAR   ---  ---     ?C_INITSEC
+      C04000H     ?C_INITSECSTART                  VAR   ---  ---     ---
+      BFC000H     ?C_NCONSTBASE                    CONST ---  ---     ---
+      0000BFH     ?C_NCONSTBASESEG                 CONST ---  ---     ---
+      004000H     ?C_NDATABASE                     CONST ---  ---     ---
+      000000H     ?C_NDATABASESEG                  CONST ---  ---     ---
+      000000H     ?C_PAGEDPP0                      CONST ---  ---     ---
+      000300H     ?C_PAGEDPP1                      CONST ---  ---     ---
+      000003H     ?C_PAGEDPP2                      CONST ---  ---     ---
+      C00200H     ?C_STARTUP                       LABEL ---  ICODE   ?C_STARTUP_CODE
+L166 LINKER/LOCATER V5.25                                                             09/12/2011  15:32:45  PAGE 3
+
+
+      00F600H     ?C_SYSSTKBOT                     VAR   ---  IDATA   ?C_SYSSTACK
+      00F800H     ?C_SYSSTKTOP                     VAR   ---  IDATA   ?C_SYSSTACK
+      00C000H     ?C_USRSTKBOT                     VAR   ---  NDATA   ?C_USERSTACK
+      000000H     ?L?VECSC                         CONST ---  ---     ---
+      00015CH     App_Delay                        LABEL ---  BCODE   ?PR?MAIN
+      00C24EH     Boot_App_Switch_u08              VAR   ---  NDATA0  ?ND0?BOOTROOM
+      E00206H     Boot_Function                    LABEL ---  BCODE   ?PR?BOOTROOM
+      00C24AH     Boot_Write_Addr_32               VAR   ---  NDATA0  ?ND0?BOOTROOM
+      E0040CH     Check                            LABEL ---  BCODE   ?PR?PFLASH
+      C0095CH     IO_vInit                         LABEL ---  FCODE   ?PR?IO
+      00009EH     MAIN_vChangeFreq                 LABEL ---  BCODE   ?PR?MAIN
+      000000H     MAIN_vInit                       LABEL ---  BCODE   ?PR?MAIN
+      000052H     MAIN_vLockProtecReg              LABEL ---  BCODE   ?PR?MAIN
+      000024H     MAIN_vUnlockProtecReg            LABEL ---  BCODE   ?PR?MAIN
+      00016EH     Main_App                         LABEL ---  BCODE   ?PR?MAIN
+      E0049CH     PFlash_Erase                     LABEL ---  BCODE   ?PR?PFLASH
+      E00200H     PFlash_Read_Chr                  LABEL ---  BCODE   ?PR?BOOTROOM
+      E004ECH     PFlash_Write                     LABEL ---  BCODE   ?PR?PFLASH
+      000000H     RESET                            INTNO ---  ---     ---
+      C006E8H     Scs_ApplyNewK2Div                LABEL ---  FCODE   ?PR?SCS
+      C0073CH     Scs_GoFromBaseModeToNormalMode   LABEL ---  FCODE   ?PR?SCS
+      C0089CH     Scs_InitTimer                    LABEL ---  FCODE   ?PR?SCS
+      C00914H     Scs_RestoreTimer                 LABEL ---  FCODE   ?PR?SCS
+      00011CH     Scu_CopyVectorToPsram            LABEL ---  BCODE   ?PR?MAIN
+      000036H     _PR_Bootroom_l_                  CONST ---  ---     ---
+      C0099CH     _PR_Bootroom_s_                  CONST ---  ---     ---
+      E00200H     _PR_Bootroom_t_                  CONST ---  ---     ---
+      00014CH     _PR_PFLASH_l_                    CONST ---  ---     ---
+      C009D2H     _PR_PFLASH_s_                    CONST ---  ---     ---
+      E00400H     _PR_PFLASH_t_                    CONST ---  ---     ---
+      00C250H     base                             VAR   ---  NDATA0  ?ND0?PFLASH
+      00C254H     buf                              VAR   ---  SDATA0  ?SD0?BOOTROOM
+      00C24FH     data_read                        VAR   ---  NDATA0  ?ND0?BOOTROOM
+      E00400H     delay                            LABEL ---  BCODE   ?PR?PFLASH
+      C00986H     hmemcpy                          LABEL ---  FCODE   ?PR?HMEMCPY
+      0000D6H     main                             LABEL ---  BCODE   ?PR?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  XC2365B_Boot (?C_STARTUP)
+
+      VALUE       TYPE      REP       LENGTH  TGR   SYMBOL NAME
+      =========================================================
+      C00200H     PUBLIC    LABEL     ---     ---   ?C_STARTUP
+      000000H     PUBLIC    CONST     ---     ---   ?L?VECSC
+      00C000H     PUBLIC    VAR       ---     ---   ?C_USRSTKBOT
+      00F600H     PUBLIC    VAR       ---     ---   ?C_SYSSTKBOT
+      00F800H     PUBLIC    VAR       ---     ---   ?C_SYSSTKTOP
+      000000H     GLOBAL    INTNO     ---     ---   RESET
+
+      C00200H     BLOCK     LVL=0     0130H   ---   ?C_RESET
+      ---         BLOCKEND  LVL=0     ---     ---   
+
+      C00330H     BLOCK     LVL=0     00C8H   ---   ?C_UTILFUNCS
+      ---         BLOCKEND  LVL=0     ---     ---   
+      0000D6H     GLOBAL    LABEL     ---     ---   main
+      00015CH     PUBLIC    LABEL     ---     ---   App_Delay
+L166 LINKER/LOCATER V5.25                                                             09/12/2011  15:32:45  PAGE 4
+
+
+      00011CH     PUBLIC    LABEL     ---     ---   Scu_CopyVectorToPsram
+      00009EH     PUBLIC    LABEL     ---     ---   MAIN_vChangeFreq
+      000052H     PUBLIC    LABEL     ---     ---   MAIN_vLockProtecReg
+      000000H     PUBLIC    LABEL     ---     ---   MAIN_vInit
+      00016EH     PUBLIC    LABEL     ---     ---   Main_App
+      000024H     PUBLIC    LABEL     ---     ---   MAIN_vUnlockProtecReg
+      C00914H     PUBLIC    LABEL     ---     ---   Scs_RestoreTimer
+      C006E8H     PUBLIC    LABEL     ---     ---   Scs_ApplyNewK2Div
+      C0089CH     PUBLIC    LABEL     ---     ---   Scs_InitTimer
+      C0073CH     PUBLIC    LABEL     ---     ---   Scs_GoFromBaseModeToNormalMode
+      C0095CH     PUBLIC    LABEL     ---     ---   IO_vInit
+      E00206H     PUBLIC    LABEL     ---     ---   Boot_Function
+      E00200H     PUBLIC    LABEL     ---     ---   PFlash_Read_Chr
+      00C24AH     PUBLIC    VAR       ---     ---   Boot_Write_Addr_32
+      00C24EH     PUBLIC    VAR       ---     ---   Boot_App_Switch_u08
+      00C24FH     PUBLIC    VAR       ---     ---   data_read
+      00C254H     PUBLIC    VAR       ---     ---   buf
+      E0040CH     PUBLIC    LABEL     ---     ---   Check
+      E004ECH     PUBLIC    LABEL     ---     ---   PFlash_Write
+      E0049CH     PUBLIC    LABEL     ---     ---   PFlash_Erase
+      E00400H     PUBLIC    LABEL     ---     ---   delay
+      00C250H     PUBLIC    VAR       ---     ---   base
+
+      C00000H     BLOCK     LVL=0     0200H   ---   VEC_PROC
+      ---         BLOCKEND  LVL=0     ---     ---   
+      C00986H     PUBLIC    LABEL     ---     ---   hmemcpy
+
+      C00986H     BLOCK     LVL=0     0016H   ---   hmemcpy
+      ---         BLOCKEND  LVL=0     ---     ---   
+      C0409AH     PUBLIC    VAR       ---     ---   ?C_ENDINIT
+
+
+
+FUNCTION REGISTER MASKS
+
+
+FUNCTION . . . . . . . . . . . . . REG MASK
+===========================================
+
+
+
+
+INTER-MODULE CROSS-REFERENCE LISTING
+
+
+NAME . . . . . . . . . . . . . . REP    TGR  MODULE NAMES
+=========================================================
+
+?C_CLRMEMSECSTART. . . . . . . . VAR   ---  ** L166 GENERATED **  ?C_STARTUP  
+?C_ENDINIT . . . . . . . . . . . VAR   ---  ?C_ENDINIT  ?C_STARTUP  
+?C_INITSECSTART. . . . . . . . . VAR   ---  ** L166 GENERATED **  ?C_STARTUP  
+?C_NCONSTBASE. . . . . . . . . . CONST ---  ** L166 GENERATED **  
+?C_NCONSTBASESEG . . . . . . . . CONST ---  ** L166 GENERATED **  
+?C_NDATABASE . . . . . . . . . . CONST ---  ** L166 GENERATED **  
+?C_NDATABASESEG. . . . . . . . . CONST ---  ** L166 GENERATED **  
+?C_PAGEDPP0. . . . . . . . . . . CONST ---  ** L166 GENERATED **  ?C_STARTUP  
+?C_PAGEDPP1. . . . . . . . . . . CONST ---  ** L166 GENERATED **  ?C_STARTUP  
+L166 LINKER/LOCATER V5.25                                                             09/12/2011  15:32:45  PAGE 5
+
+
+?C_PAGEDPP2. . . . . . . . . . . CONST ---  ** L166 GENERATED **  ?C_STARTUP  
+?C_STARTUP . . . . . . . . . . . LABEL ---  ?C_STARTUP  IRQ_REDIR  MAIN  
+?C_SYSSTKBOT . . . . . . . . . . VAR   ---  ?C_STARTUP  
+?C_SYSSTKTOP . . . . . . . . . . VAR   ---  ?C_STARTUP  
+?C_USRSTKBOT . . . . . . . . . . VAR   ---  ?C_STARTUP  
+?L?VECSC . . . . . . . . . . . . CONST ---  ?C_STARTUP  
+App_Delay. . . . . . . . . . . . LABEL ---  MAIN  
+Boot_App_Switch_u08. . . . . . . VAR   ---  BOOTROOM  MAIN  
+Boot_Function. . . . . . . . . . LABEL ---  BOOTROOM  MAIN  
+Boot_Write_Addr_32 . . . . . . . VAR   ---  BOOTROOM  
+Check. . . . . . . . . . . . . . LABEL ---  PFLASH  
+IO_vInit . . . . . . . . . . . . LABEL ---  IO  MAIN  
+MAIN_vChangeFreq . . . . . . . . LABEL ---  MAIN  
+MAIN_vInit . . . . . . . . . . . LABEL ---  MAIN  
+MAIN_vLockProtecReg. . . . . . . LABEL ---  MAIN  
+MAIN_vUnlockProtecReg. . . . . . LABEL ---  MAIN  
+Main_App . . . . . . . . . . . . LABEL ---  MAIN  BOOTROOM  
+PFlash_Erase . . . . . . . . . . LABEL ---  PFLASH  
+PFlash_Read_Chr. . . . . . . . . LABEL ---  BOOTROOM  
+PFlash_Write . . . . . . . . . . LABEL ---  PFLASH  
+Scs_ApplyNewK2Div. . . . . . . . LABEL ---  SCS  
+Scs_GoFromBaseModeToNormalMode . LABEL ---  SCS  MAIN  
+Scs_InitTimer. . . . . . . . . . LABEL ---  SCS  MAIN  
+Scs_RestoreTimer . . . . . . . . LABEL ---  SCS  
+Scu_CopyVectorToPsram. . . . . . LABEL ---  MAIN  
+_PR_Bootroom_l_. . . . . . . . . CONST ---  ** L166 GENERATED **  MAIN  
+_PR_Bootroom_s_. . . . . . . . . CONST ---  ** L166 GENERATED **  MAIN  
+_PR_Bootroom_t_. . . . . . . . . CONST ---  ** L166 GENERATED **  MAIN  
+_PR_PFLASH_l_. . . . . . . . . . CONST ---  ** L166 GENERATED **  MAIN  
+_PR_PFLASH_s_. . . . . . . . . . CONST ---  ** L166 GENERATED **  MAIN  
+_PR_PFLASH_t_. . . . . . . . . . CONST ---  ** L166 GENERATED **  MAIN  
+base . . . . . . . . . . . . . . VAR   ---  PFLASH  
+buf. . . . . . . . . . . . . . . VAR   ---  BOOTROOM  
+data_read. . . . . . . . . . . . VAR   ---  BOOTROOM  
+delay. . . . . . . . . . . . . . LABEL ---  PFLASH  
+hmemcpy. . . . . . . . . . . . . LABEL ---  HMEMCPY  MAIN  
+main . . . . . . . . . . . . . . LABEL ---  MAIN  ?C_STARTUP  
+
+
+
+*** WARNING L25: EVAL VERSION USED BEFORE, REBUILD ALL *.OBJ FILES
+    MODULE:  MAIN.obj (MAIN)
+
+******************************************************************************
+* RESTRICTED VERSION WITH 1000H BYTE CODE SIZE LIMIT; USED: 0D3CH BYTE (82%) *
+******************************************************************************
+
+Program Size: data=1236(near=1236) const=190(near=16) code=3626
+L166 RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

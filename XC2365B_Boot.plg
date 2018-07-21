@@ -1,0 +1,242 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\上海航天机电\BLEPS_SupportBoot\XC2365B_boot\XC2365B_Boot.uvproj
+Project File Date:  09/12/2011
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Start_V3.A66...
+compiling MAIN.c...
+compiling SCS.c...
+compiling IO.c...
+IO.c(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling GPT1.c...
+GPT1.c(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling GPT2.c...
+GPT2.c(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling Bootroom.C...
+Bootroom.C(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling pflash.c...
+assembling irq_redir.a66...
+linking...
+*** WARNING L25: EVAL VERSION USED BEFORE, REBUILD ALL *.OBJ FILES
+    MODULE:  MAIN.obj (MAIN)
+*** ERROR L110: CANNOT FIND SECTION OR REGBANK
+    SECTION: ?PR?BOOTROOM
+    CLASS:   BCODE
+*** ERROR L110: CANNOT FIND SECTION OR REGBANK
+    SECTION: ?PR?PFLASH
+    CLASS:   BCODE
+*** ERROR L110: CANNOT FIND SECTION OR REGBANK
+    SECTION: ?PR?MAIN
+    CLASS:   BCODE
+*** ERROR L110: CANNOT FIND SECTION OR REGBANK
+    SECTION: ?PR?GPT1
+    CLASS:   BCODE
+*** WARNING L21: DATA TYPES SLIGHTLY DIFFERENT
+    SYMBOL:  ?C_STARTUP
+    MODULE:  irq_redir.obj (IRQ_REDIR)
+Program Size: data=1236(near=1236) const=190(near=16) code=3354
+Target not created
+Build target 'Target 1'
+assembling Start_V3.A66...
+compiling MAIN.c...
+compiling SCS.c...
+compiling IO.c...
+IO.c(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling GPT1.c...
+GPT1.c(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling GPT2.c...
+GPT2.c(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling Bootroom.C...
+Bootroom.C(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling pflash.c...
+assembling irq_redir.a66...
+linking...
+*** WARNING L25: EVAL VERSION USED BEFORE, REBUILD ALL *.OBJ FILES
+    MODULE:  MAIN.obj (MAIN)
+*** WARNING L14: INCOMPATIBLE MEMORY MODEL
+    MODULE:  Bootroom.obj (BOOTROOM)
+    MODEL:   LARGE
+*** WARNING L14: INCOMPATIBLE MEMORY MODEL
+    MODULE:  pflash.obj (PFLASH)
+    MODEL:   LARGE
+*** ERROR L110: CANNOT FIND SECTION OR REGBANK
+    SECTION: ?PR?MAIN
+    CLASS:   BCODE
+*** ERROR L110: CANNOT FIND SECTION OR REGBANK
+    SECTION: ?PR?GPT1
+    CLASS:   BCODE
+*** WARNING L20: DATA TYPES DIFFERENT
+    SYMBOL:  Boot_Function
+    MODULE:  MAIN.obj (MAIN)
+   DEFINED:  Bootroom.obj (BOOTROOM)
+*** WARNING L20: DATA TYPES DIFFERENT
+    SYMBOL:  Main_App
+    MODULE:  Bootroom.obj (BOOTROOM)
+   DEFINED:  MAIN.obj (MAIN)
+Program Size: data=1236(near=1236) const=190(near=16) code=3752
+Target not created
+compiling pflash.c...
+pflash.c - 0 Error(s), 0 Warning(s).
+compiling MAIN.c...
+MAIN.c - 0 Error(s), 0 Warning(s).
+compiling Bootroom.C...
+Bootroom.C(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+Bootroom.C - 0 Error(s), 1 Warning(s).
+assembling irq_redir.a66...
+irq_redir.a66 - 0 Error(s), 0 Warning(s).
+compiling MAIN.c...
+MAIN.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling SCS.c...
+compiling IO.c...
+IO.c(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling Bootroom.C...
+Bootroom.C(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+linking...
+*** WARNING L25: EVAL VERSION USED BEFORE, REBUILD ALL *.OBJ FILES
+    MODULE:  MAIN.obj (MAIN)
+*** WARNING L14: INCOMPATIBLE MEMORY MODEL
+    MODULE:  Bootroom.obj (BOOTROOM)
+    MODEL:   LARGE
+*** WARNING L14: INCOMPATIBLE MEMORY MODEL
+    MODULE:  pflash.obj (PFLASH)
+    MODEL:   LARGE
+*** ERROR L110: CANNOT FIND SECTION OR REGBANK
+    SECTION: ?PR?MAIN
+    CLASS:   BCODE
+*** ERROR L110: CANNOT FIND SECTION OR REGBANK
+    SECTION: ?PR?GPT1
+    CLASS:   BCODE
+*** WARNING L20: DATA TYPES DIFFERENT
+    SYMBOL:  Boot_Function
+    MODULE:  MAIN.obj (MAIN)
+   DEFINED:  Bootroom.obj (BOOTROOM)
+*** WARNING L20: DATA TYPES DIFFERENT
+    SYMBOL:  Main_App
+    MODULE:  Bootroom.obj (BOOTROOM)
+   DEFINED:  MAIN.obj (MAIN)
+Program Size: data=1236(near=1236) const=190(near=16) code=3618
+Target not created
+Build target 'Target 1'
+assembling Start_V3.A66...
+compiling MAIN.c...
+compiling SCS.c...
+compiling IO.c...
+IO.c(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling Bootroom.C...
+Bootroom.C(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling pflash.c...
+assembling irq_redir.a66...
+linking...
+L166 LINKER/LOCATER V5.25 - SN: K6NMC-M6XKTC
+COPYRIGHT KEIL ELEKTRONIK GmbH 1991 - 2007
+"Start_V3.obj",
+"MAIN.obj",
+"SCS.obj",
+"IO.obj",
+"Bootroom.obj",
+"pflash.obj",
+"irq_redir.obj" 
+TO "XC2365B_Boot" 
+IXREF 
+NOVECTAB 
+CLASSES (ICODE (0xC00000-0xC03FFF), NCODE (0xC00000-0xC03FFF), 
+FCODE (0xC00000-0xC03FFF), SROM(0xC00000-0xC03FFF),
+FCONST (0xC00000-0xC03FFF), HCONST (0xC00000-0xC03FFF), 
+XCONST (0xC00000-0xC03FFF), NCONST (0xC02000-0xC03FFF), 
+NDATA (0xC000-0xCFFF, 0xF600-0xFDFF), NDATA0 (0xC000-0xCFFF, 0xF600-0xFDFF), 
+SDATA (0xC000-0xCFFF, 0xF600-0xFDFF), SDATA0 (0xC000-0xCFFF, 0xF600-0xFDFF), 
+IDATA (0xF600-0xFDFF), IDATA0 (0xF600-0xFDFF), 
+FDATA (0xC000-0xCFFF, 0xF600-0xFDFF), FDATA0 (0xC000-0xCFFF, 0xF600-0xFDFF), 
+HDATA (0xC000-0xCFFF, 0xF600-0xFDFF), HDATA0 (0xC000-0xCFFF, 0xF600-0xFDFF), 
+XDATA (0xC000-0xCFFF, 0xF600-0xFDFF), XDATA0 (0xC000-0xCFFF, 0xF600-0xFDFF)) 
+ CINITTAB (0xC04000-0xC4FFFF) SECTIONS ( ?PR?BOOTROOM%BCODE(0xE00200)[],
+?PR?PFLASH%BCODE(0xE00400)[],
+) 
+*** FATAL ERROR L203: EXPECTED ITEM MISSING
+    POS: 905
+    ONS (?PR?BOOTROOM%BCODE (0XE00200)[], ?PR?PFLASH%BCODE (0XE00400)[], )#
+Target not created
+Build target 'Target 1'
+assembling Start_V3.A66...
+compiling MAIN.c...
+compiling SCS.c...
+compiling IO.c...
+IO.c(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling Bootroom.C...
+Bootroom.C(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling pflash.c...
+assembling irq_redir.a66...
+linking...
+*** WARNING L25: EVAL VERSION USED BEFORE, REBUILD ALL *.OBJ FILES
+    MODULE:  MAIN.obj (MAIN)
+*** WARNING L14: INCOMPATIBLE MEMORY MODEL
+    MODULE:  Bootroom.obj (BOOTROOM)
+    MODEL:   LARGE
+*** WARNING L14: INCOMPATIBLE MEMORY MODEL
+    MODULE:  pflash.obj (PFLASH)
+    MODEL:   LARGE
+*** WARNING L20: DATA TYPES DIFFERENT
+    SYMBOL:  Boot_Function
+    MODULE:  MAIN.obj (MAIN)
+   DEFINED:  Bootroom.obj (BOOTROOM)
+*** WARNING L20: DATA TYPES DIFFERENT
+    SYMBOL:  Main_App
+    MODULE:  Bootroom.obj (BOOTROOM)
+   DEFINED:  MAIN.obj (MAIN)
+Program Size: data=1236(near=1236) const=190(near=16) code=3618
+"XC2365B_Boot" - 0 Error(s), 7 Warning(s).
+Build target 'Target 1'
+assembling Start_V3.A66...
+compiling MAIN.c...
+compiling SCS.c...
+compiling IO.c...
+IO.c(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling Bootroom.C...
+C166 FATAL-ERROR -
+  ACTION:  PARSING INVOKE-/#PRAGMA-LINE
+  LINE:    #pragma LARGE
+  ERROR:   RESPECIFIED OR CONFLICTING CONTROL
+C166 TERMINATED.
+Target not created
+compiling Bootroom.C...
+Bootroom.C(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+Bootroom.C - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling Start_V3.A66...
+compiling MAIN.c...
+compiling SCS.c...
+compiling IO.c...
+IO.c(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling Bootroom.C...
+Bootroom.C(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling pflash.c...
+assembling irq_redir.a66...
+linking...
+*** WARNING L25: EVAL VERSION USED BEFORE, REBUILD ALL *.OBJ FILES
+    MODULE:  MAIN.obj (MAIN)
+*** WARNING L21: DATA TYPES SLIGHTLY DIFFERENT
+    SYMBOL:  ?C_STARTUP
+    MODULE:  irq_redir.obj (IRQ_REDIR)
+Program Size: data=1236(near=1236) const=190(near=16) code=3626
+"XC2365B_Boot" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+assembling Start_V3.A66...
+compiling MAIN.c...
+compiling SCS.c...
+compiling IO.c...
+IO.c(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling Bootroom.C...
+Bootroom.C(381): warning C174: 'Scs_EnableHighPrecOsc': unreferenced 'static' function
+compiling pflash.c...
+assembling irq_redir.a66...
+linking...
+*** WARNING L25: EVAL VERSION USED BEFORE, REBUILD ALL *.OBJ FILES
+    MODULE:  MAIN.obj (MAIN)
+Program Size: data=1236(near=1236) const=190(near=16) code=3626
+"XC2365B_Boot" - 0 Error(s), 3 Warning(s).
